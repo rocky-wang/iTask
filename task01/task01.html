@@ -36,14 +36,20 @@
         <li>列表项目二</li>
         <li>列表项目三</li>
     </ul>
-    <h2>图片</h2>
-    <ul>
-        <li>好看的图片1<br><img src="images/002.jpg" alt="第一个图片" style="width: 101px;height: 150px"></li>
-        <li>好看的图片2<br><img src="images/002.jpg" alt="第一个图片" style="width: 101px;height: 150px"></li>
-        <li>好看的图片3<br><img src="images/002.jpg" alt="第一个图片" style="width: 101px;height: 150px"></li>
-        <li>好看的图片4<br><img src="images/002.jpg" alt="第一个图片" style="width: 101px;height: 150px"></li>
-    </ul>
 </article>
+<!--图片展台-->
+<h2>图片</h2>
+<figure>
+    <figcaption>这是一部电影1</figcaption>
+    <img src="images/003.jpg" alt="第一个图片" style="width: 300px">
+    <figcaption>这是一部电影2</figcaption>
+    <img src="images/003.jpg" alt="第一个图片" style="width: 300px">
+    <figcaption>这是一部电影3</figcaption>
+    <img src="images/003.jpg" alt="第一个图片" style="width: 300px">
+    <figcaption>这是一部电影4</figcaption>
+    <img src="images/003.jpg" alt="第一个图片" style="width: 300px">
+</figure>
+
 <article>
     <h2>最后一篇文章一级标题</h2>
     <h3>文章二级标题</h3>
@@ -90,7 +96,40 @@
 <aside>
     <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
     <h3>侧栏注册窗口标题</h3>
-
+    <!--注册邮箱信息-->
+    <form action="http://www.5566.net/news.html" method="get">
+        <label for="email-info">请输入邮箱地址：</label>
+        <input type="text" name="emails" id="email-info" placeholder="这是一个文本输入框"><br>
+        <p>邮箱地址请按格式要求输出</p>
+        <label for="pwd1">请输入密码：</label>
+        <input type="password" name="pwd" id="pwd1" placeholder="这是一个文本输入框">
+        <label for="pwd2">请重复输入密码：</label>
+        <input type="password" name="bak-pwd" id="pwd2" placeholder="这是一个文本输入框"><br>
+        <p>密码请为6-16位英文数字</p>
+    </form>
+    <!--个人信息-->
+    <form action="" method="get">
+        <span>性别：</span>
+        <input type="radio" checked="checked" name="sex" value="male" id="sex-male"><label for="sex-male">男</label>
+        <input type="radio" name="sex" value="female" id="sex-female"><label for="sex-female">女</label>
+        <!--城市-->
+        <label for="city-info">城市：</label>
+        <select name="citys" id="city-info">
+            <option value="cd">成都</option>
+            <option value="cq">重庆</option>
+            <option value="bj" selected>北京</option>
+            <option value="sh">上海</option>
+        </select>
+        <!--爱好-->
+        <label for="sportID">爱好：</label>
+        <input name="hobby" type="checkbox" id="sportID" value="sport"><label for="sportID">运动</label>
+        <input name="hobby" type="checkbox" id="artID" value="art"><label for="artID">艺术</label>
+        <input name="hobby" type="checkbox" id="scienceID" value="science"><label for="scienceID">科学</label>
+        <!--个人描述-->
+        <label for="descID">个人描述：</label>
+        <textarea name="self-descr" id="descID" cols="20em" rows="2em" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+        <input type="submit" value="确认提交">
+    </form>
 </aside>
 </body>
 </html>
